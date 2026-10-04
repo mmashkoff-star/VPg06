@@ -1,0 +1,243 @@
+2026-10-04 17:34:38 INFO memory: PineconeContextMemory ready: index=vpg06 namespace=hay-assistant dim=1536 metric=cosine model=text-embedding-3-small
+2026-10-04 17:34:38 INFO assistant: HaystackAssistant ready with 2 tools
+2026-10-04 17:34:39 INFO hay_telegram_bot: Command menu: /start, /help, /memory, /forget, /reset, /dogfact, /dogpic
+2026-10-04 17:34:39 INFO hay_telegram_bot: Haystack Telegram bot started. Polling...
+2026-10-04 17:39:15 INFO memory: PineconeContextMemory ready: index=vpg06 namespace=hay-assistant dim=1536 metric=cosine model=text-embedding-3-small
+2026-10-04 17:39:15 INFO assistant: HaystackAssistant ready with 2 tools
+2026-10-04 17:39:16 INFO hay_telegram_bot: Command menu: /start, /help, /memory, /forget, /reset, /dogfact, /dogpic
+2026-10-04 17:39:16 INFO hay_telegram_bot: Haystack Telegram bot started. Polling... Logs: hay/logs/bot.log, chats: hay/logs/conversations.log
+2026-10-04 17:39:31 INFO hay_telegram_bot: Incoming command from user_id=5286641259 username=mnmashkov full_name=Михаил Машков: /start
+2026-10-04 17:39:32 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:39:33 INFO pinecone.client.indexes: Listing indexes
+2026-10-04 17:39:34 INFO haystack_integrations.document_stores.pinecone.document_store: Connecting to existing index vpg06. `dimension`, `spec`, and `metric` will be ignored.
+2026-10-04 17:39:34 INFO pinecone.client.indexes: Describing index 'vpg06'
+2026-10-04 17:39:35 INFO pinecone.index: Index client created for host https://vpg06-jopkxzb.svc.aped-4627-b74a.pinecone.io
+2026-10-04 17:39:35 INFO pinecone.index: Describing index stats
+2026-10-04 17:39:37 INFO memory: Memory write: user_id=5286641259 role=profile id=011b9e3e-aa5d-4dde-b623-07ecff817795 text='Имя пользователя в Telegram: Михаил Машков'
+2026-10-04 17:39:38 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:39:39 INFO memory: Memory write: user_id=5286641259 role=profile id=0ef3797c-c9a6-468c-bf08-7e85c72a6311 text='Telegram username: @mnmashkov'
+2026-10-04 17:39:40 INFO hay_telegram_bot: Service reply (not saved) to user_id=5286641259: Привет, Михаил Машков! Я персональный помощник на Haystack Agent с памятью в Pinecone.
+
+Пишите как обычно — я учитываю ваш контекст и продолжаю диалог.
+
+Ещё умею:
+• случайный факт о собаках
+• случайну...
+2026-10-04 17:40:24 INFO hay_telegram_bot: Incoming command from user_id=5286641259 username=mnmashkov full_name=Михаил Машков: Расскажи случайный факт о собаках
+2026-10-04 17:40:25 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:40:25 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 17:40:26 INFO memory: Memory recall: user_id=5286641259 hits=2
+2026-10-04 17:40:28 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 17:40:29 INFO tools: Dog fact fetched: Dogs do not have an appendix.
+2026-10-04 17:40:30 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 17:40:31 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:40:33 INFO memory: Memory write: user_id=5286641259 role=user id=3d15a18a-4bb7-42eb-a201-5317ff309c57 text='Пользователь: Расскажи случайный факт о собаках'
+2026-10-04 17:40:33 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:40:34 INFO memory: Memory write: user_id=5286641259 role=assistant id=f1bf0710-2881-423f-a27a-df5bae0353f1 text='Помощник: Вот интересный факт о собаках: у них нет аппендикса! Если у тебя есть еще вопросы о собаках или что-то другое,...'
+2026-10-04 17:40:34 INFO hay_telegram_bot: Reply to user_id=5286641259: Вот интересный факт о собаках: у них нет аппендикса! Если у тебя есть еще вопросы о собаках или что-то другое, дай знать!
+2026-10-04 17:41:13 INFO hay_telegram_bot: Incoming command from user_id=5286641259 username=mnmashkov full_name=Михаил Машков: Покажи случайную картинку собаки и опиши породу с краткой предысторией
+2026-10-04 17:41:14 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:41:14 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 17:41:16 INFO memory: Memory recall: user_id=5286641259 hits=4
+2026-10-04 17:41:18 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 17:41:18 INFO tools: Dog image fetched: https://images.dog.ceo/breeds/corgi-cardigan/n02113186_4760.jpg
+2026-10-04 17:41:23 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 17:41:29 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 17:41:30 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:41:31 INFO memory: Memory write: user_id=5286641259 role=user id=c6531f4c-996f-4bad-b2d7-581946ef8c57 text='Пользователь: Покажи случайную картинку собаки и опиши породу с краткой предысторией'
+2026-10-04 17:41:32 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:41:32 INFO memory: Memory write: user_id=5286641259 role=assistant id=b1281fad-5fb3-4eb0-9587-5164c2cd318b text='Помощник: Вот случайная картинка собаки: ![Уэльский корги](https://images.dog.ceo/breeds/corgi-cardigan/n02113186_4760.j...'
+2026-10-04 17:41:32 INFO hay_telegram_bot: Reply to user_id=5286641259: Вот случайная картинка собаки:
+
+![Уэльский корги](https://images.dog.ceo/breeds/corgi-cardigan/n02113186_4760.jpg)
+
+### Описание породы: Уэльский корги (пемброк или кардиган)
+
+**Внешние признаки:** У ...
+2026-10-04 17:41:32 INFO hay_telegram_bot: Photo sent to user_id=5286641259: https://images.dog.ceo/breeds/corgi-cardigan/n02113186_4760.jpg
+2026-10-04 17:44:57 INFO hay_telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov full_name=Михаил Машков: Я люблю астрономию
+2026-10-04 17:44:58 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:44:58 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 17:45:00 INFO memory: Memory recall: user_id=5286641259 hits=6
+2026-10-04 17:45:02 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 17:45:03 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:45:04 INFO memory: Memory write: user_id=5286641259 role=user id=e00bfb9a-8671-412a-b29b-0bb56abc5d31 text='Пользователь: Я люблю астрономию'
+2026-10-04 17:45:04 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:45:05 INFO memory: Memory write: user_id=5286641259 role=assistant id=f265f51e-2f8d-4fce-8dd5-fa1955e597fa text='Помощник: Здорово! Астрономия — это fascinирующая тема. Есть ли у тебя любимые аспекты астрономии, например, планеты, зв...'
+2026-10-04 17:45:05 INFO hay_telegram_bot: Reply to user_id=5286641259: Здорово! Астрономия — это fascinирующая тема. Есть ли у тебя любимые аспекты астрономии, например, планеты, звезды, черные дыры или что-то другое? Или, может быть, у тебя есть вопросы или темы, которы...
+2026-10-04 17:46:49 INFO memory: PineconeContextMemory ready: index=vpg06 namespace=hay-assistant dim=1536 metric=cosine model=text-embedding-3-small
+2026-10-04 17:46:49 INFO assistant: HaystackAssistant ready with 2 tools
+2026-10-04 17:46:49 INFO hay_telegram_bot: Command menu: /start, /help, /memory, /forget, /reset, /dogfact, /dogpic
+2026-10-04 17:46:49 INFO hay_telegram_bot: Haystack Telegram bot started. Polling... Logs: hay/logs/bot.log, chats: hay/logs/conversations.log
+2026-10-04 17:52:04 INFO hay_telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov full_name=Михаил Машков: Я люблю астрономию
+2026-10-04 17:52:07 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:52:07 INFO pinecone.client.indexes: Listing indexes
+2026-10-04 17:52:09 INFO haystack_integrations.document_stores.pinecone.document_store: Connecting to existing index vpg06. `dimension`, `spec`, and `metric` will be ignored.
+2026-10-04 17:52:09 INFO pinecone.client.indexes: Describing index 'vpg06'
+2026-10-04 17:52:10 INFO pinecone.index: Index client created for host https://vpg06-jopkxzb.svc.aped-4627-b74a.pinecone.io
+2026-10-04 17:52:10 INFO pinecone.index: Describing index stats
+2026-10-04 17:52:11 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 17:52:12 INFO memory: Memory recall: user_id=5286641259 hits=8
+2026-10-04 17:52:14 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 17:52:15 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:52:15 INFO memory: Memory write: user_id=5286641259 role=user id=9935776e-7aba-4d58-a52d-497a6b25a76c text='Пользователь: Я люблю астрономию'
+2026-10-04 17:52:16 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:52:16 INFO memory: Memory write: user_id=5286641259 role=assistant id=6d7d0788-323d-4a8d-ba24-dbe18d2a2352 text='Помощник: Здорово! Астрономия действительно увлекательная тема. Есть ли у тебя любимые аспекты астрономии, например, пла...'
+2026-10-04 17:52:16 INFO hay_telegram_bot: Reply to user_id=5286641259: Здорово! Астрономия действительно увлекательная тема. Есть ли у тебя любимые аспекты астрономии, например, планеты, звезды, черные дыры или что-то другое? Или, может быть, у тебя есть вопросы или темы...
+2026-10-04 17:52:38 INFO hay_telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov full_name=Михаил Машков: Расскажи мне про Сатурн
+2026-10-04 17:52:39 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:52:39 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 17:52:41 INFO memory: Memory recall: user_id=5286641259 hits=7
+2026-10-04 17:52:44 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 17:52:45 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:52:46 INFO memory: Memory write: user_id=5286641259 role=user id=69098055-936f-411c-b2a4-9e58e8258e5b text='Пользователь: Расскажи мне про Сатурн'
+2026-10-04 17:52:46 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:52:47 INFO memory: Memory write: user_id=5286641259 role=assistant id=c2920376-b736-42a1-a590-13872384408f text='Помощник: Сатурн — это шестая планета от Солнца и вторая по величине в Солнечной системе после Юпитера. Он известен свои...'
+2026-10-04 17:52:47 INFO hay_telegram_bot: Reply to user_id=5286641259: Сатурн — это шестая планета от Солнца и вторая по величине в Солнечной системе после Юпитера. Он известен своими великолепными кольцами, которые состоят из ледяных и каменных частиц. Эти кольца делают...
+2026-10-04 17:53:38 INFO hay_telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov full_name=Михаил Машков: сколько колец у сатурна
+2026-10-04 17:53:39 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:53:39 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 17:53:41 INFO memory: Memory recall: user_id=5286641259 hits=7
+2026-10-04 17:53:45 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 17:53:46 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:53:46 INFO memory: Memory write: user_id=5286641259 role=user id=fe7c17f7-605d-4a0a-ac56-a88be01ffc8d text='Пользователь: сколько колец у сатурна'
+2026-10-04 17:53:47 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:53:47 INFO memory: Memory write: user_id=5286641259 role=assistant id=b273ef30-f9f2-46c2-8bdc-cc13d451f9a2 text='Помощник: У Сатурна есть несколько колец, которые традиционно делят на основные группы. Основные кольца обозначаются бук...'
+2026-10-04 17:53:47 INFO hay_telegram_bot: Reply to user_id=5286641259: У Сатурна есть несколько колец, которые традиционно делят на основные группы. Основные кольца обозначаются буквами от A до G, и их количество может варьироваться в зависимости от того, как мы определя...
+2026-10-04 17:56:57 INFO hay_telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov full_name=Михаил Машков: Что можно подарить себе на новый год?
+2026-10-04 17:56:59 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:56:59 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 17:57:01 INFO memory: Memory recall: user_id=5286641259 hits=7
+2026-10-04 17:57:04 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 17:57:05 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:57:06 INFO memory: Memory write: user_id=5286641259 role=user id=6cc54bfc-3ef2-42ce-bebe-59849c9a4a7d text='Пользователь: Что можно подарить себе на новый год?'
+2026-10-04 17:57:06 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:57:07 INFO memory: Memory write: user_id=5286641259 role=assistant id=12266976-3b61-4525-93c7-ae27d619c262 text='Помощник: Выбор подарка себе на Новый год зависит от твоих интересов и предпочтений. Вот несколько идей: 1. **Книги** — ...'
+2026-10-04 17:57:07 INFO hay_telegram_bot: Reply to user_id=5286641259: Выбор подарка себе на Новый год зависит от твоих интересов и предпочтений. Вот несколько идей:
+
+1. **Книги** — если ты любишь читать, выбери интересную книгу по астрономии или другую тему, которая теб...
+2026-10-04 17:57:40 INFO hay_telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov full_name=Михаил Машков: А исходя из того что ты обо мне знаешь?
+2026-10-04 17:57:41 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:57:41 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 17:57:43 INFO memory: Memory recall: user_id=5286641259 hits=7
+2026-10-04 17:57:46 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 17:57:47 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:57:47 INFO memory: Memory write: user_id=5286641259 role=user id=b1580c04-0fca-4cc4-ba2a-27f6837f20c4 text='Пользователь: А исходя из того что ты обо мне знаешь?'
+2026-10-04 17:57:47 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 17:57:48 INFO memory: Memory write: user_id=5286641259 role=assistant id=cc373b9f-667d-4dac-bf37-5cd0027683b0 text='Помощник: Исходя из того, что ты любишь астрономию, вот несколько идей подарков, которые могут тебе подойти: 1. **Телеск...'
+2026-10-04 17:57:48 INFO hay_telegram_bot: Reply to user_id=5286641259: Исходя из того, что ты любишь астрономию, вот несколько идей подарков, которые могут тебе подойти:
+
+1. **Телескоп** — это отличный способ углубить свои знания о космосе и наблюдать за звездами и плане...
+2026-10-04 18:27:24 INFO hay_telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov full_name=Михаил Машков: А еще я люблю щенков. Расскажи какой-нибудь занимательный факт о них
+2026-10-04 18:27:26 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 18:27:26 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 18:27:28 INFO memory: Memory recall: user_id=5286641259 hits=7
+2026-10-04 18:27:30 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 18:27:31 INFO tools: Dog fact fetched: Bingo is the name of the dog on the box of Cracker Jacks.
+2026-10-04 18:27:33 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 18:27:34 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 18:27:36 INFO memory: Memory write: user_id=5286641259 role=user id=54b9aaeb-0f87-4f40-bd63-bbd47247beb7 text='Пользователь: А еще я люблю щенков. Расскажи какой-нибудь занимательный факт о них'
+2026-10-04 18:27:36 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 18:27:37 INFO memory: Memory write: user_id=5286641259 role=assistant id=f996061b-b06b-4dd0-8857-0079af4d68b7 text='Помощник: Вот занимательный факт о собаках: имя собаки на коробке с закусками Cracker Jacks — Бинго. Если у тебя есть ещ...'
+2026-10-04 18:27:37 INFO hay_telegram_bot: Reply to user_id=5286641259: Вот занимательный факт о собаках: имя собаки на коробке с закусками Cracker Jacks — Бинго. Если у тебя есть еще вопросы о собаках или что-то другое, дай знать!
+2026-10-04 18:29:08 INFO hay_telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov full_name=Михаил Машков: можешь показать мне изображение коробки с закусками Cracker Jacks. Никогда ее не видел
+2026-10-04 18:29:09 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 18:29:10 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 18:29:11 INFO memory: Memory recall: user_id=5286641259 hits=8
+2026-10-04 18:29:14 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 18:29:15 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 18:29:15 INFO memory: Memory write: user_id=5286641259 role=user id=39569e77-1f39-4ceb-a0f6-336a14d55835 text='Пользователь: можешь показать мне изображение коробки с закусками Cracker Jacks. Никогда ее не видел'
+2026-10-04 18:29:16 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 18:29:16 INFO memory: Memory write: user_id=5286641259 role=assistant id=40f30a67-5a00-4714-82bb-8239b5c8ec66 text='Помощник: К сожалению, я не могу показать изображение коробки с закусками Cracker Jacks, но могу рассказать о ней! Crack...'
+2026-10-04 18:29:17 INFO hay_telegram_bot: Reply to user_id=5286641259: К сожалению, я не могу показать изображение коробки с закусками Cracker Jacks, но могу рассказать о ней! Cracker Jacks — это популярные сладкие закуски из кукурузных хлопьев, которые были впервые выпу...
+2026-10-04 18:39:19 INFO hay_telegram_bot: Incoming command from user_id=5286641259 username=mnmashkov full_name=Михаил Машков: Покажи случайную картинку собаки и опиши породу с краткой предысторией
+2026-10-04 18:39:21 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 18:39:21 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 18:39:23 INFO memory: Memory recall: user_id=5286641259 hits=8
+2026-10-04 18:39:24 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 18:39:26 INFO tools: Dog image fetched: https://images.dog.ceo/breeds/schnauzer-giant/n02097130_3872.jpg
+2026-10-04 18:39:30 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 18:39:33 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 18:39:34 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 18:39:36 INFO memory: Memory write: user_id=5286641259 role=user id=5c9c6f28-0e73-424d-a0bf-1a2c15364ac6 text='Пользователь: Покажи случайную картинку собаки и опиши породу с краткой предысторией'
+2026-10-04 18:39:36 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 18:39:37 INFO memory: Memory write: user_id=5286641259 role=assistant id=e1887ed0-b31e-46df-8e36-60843546e82b text='Помощник: Вот случайная картинка собаки: ![Шнауцер](https://images.dog.ceo/breeds/schnauzer-giant/n02097130_3872.jpg) ##...'
+2026-10-04 18:39:37 INFO hay_telegram_bot: Reply to user_id=5286641259: Вот случайная картинка собаки: ![Шнауцер](https://images.dog.ceo/breeds/schnauzer-giant/n02097130_3872.jpg)
+
+### Описание породы: Шнауцер
+
+**Внешние признаки:** У шнауцера характерная борода и усы, а ...
+2026-10-04 18:39:37 INFO hay_telegram_bot: Photo sent to user_id=5286641259: https://images.dog.ceo/breeds/schnauzer-giant/n02097130_3872.jpg
+2026-10-04 18:41:19 INFO hay_telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov full_name=Михаил Машков: Отлично, но мне больше нравятся самоеды
+2026-10-04 18:41:20 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 18:41:20 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 18:41:22 INFO memory: Memory recall: user_id=5286641259 hits=7
+2026-10-04 18:41:26 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 18:41:27 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 18:41:27 INFO memory: Memory write: user_id=5286641259 role=user id=1d77960b-baa7-4105-a74b-a6e63210b38e text='Пользователь: Отлично, но мне больше нравятся самоеды'
+2026-10-04 18:41:28 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 18:41:28 INFO memory: Memory write: user_id=5286641259 role=assistant id=3afcee50-37bf-4428-b997-b84402725143 text='Помощник: Самоеды — это действительно замечательная порода! Они известны своей дружелюбной и игривой натурой, а также ха...'
+2026-10-04 18:41:28 INFO hay_telegram_bot: Reply to user_id=5286641259: Самоеды — это действительно замечательная порода! Они известны своей дружелюбной и игривой натурой, а также характерной белоснежной шерстью и улыбкой, которая делает их особенно привлекательными. 
+
+##...
+2026-10-04 18:59:23 INFO memory: PineconeContextMemory ready: index=vpg06 namespace=hay-assistant dim=1536 metric=cosine model=text-embedding-3-small
+2026-10-04 18:59:23 INFO assistant: HaystackAssistant ready with 3 tools
+2026-10-04 18:59:24 INFO hay_telegram_bot: Command menu: /start, /help, /memory, /forget, /reset, /dogfact, /dogpic, /weather
+2026-10-04 18:59:24 INFO hay_telegram_bot: Haystack Telegram bot started. Polling... Logs: hay/logs/bot.log, chats: hay/logs/conversations.log
+2026-10-04 18:59:58 INFO hay_telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov full_name=Михаил Машков: Какая погода в Кемерово
+2026-10-04 19:00:00 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 19:00:01 INFO pinecone.client.indexes: Listing indexes
+2026-10-04 19:00:02 INFO haystack_integrations.document_stores.pinecone.document_store: Connecting to existing index vpg06. `dimension`, `spec`, and `metric` will be ignored.
+2026-10-04 19:00:02 INFO pinecone.client.indexes: Describing index 'vpg06'
+2026-10-04 19:00:03 INFO pinecone.index: Index client created for host https://vpg06-jopkxzb.svc.aped-4627-b74a.pinecone.io
+2026-10-04 19:00:03 INFO pinecone.index: Describing index stats
+2026-10-04 19:00:05 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 19:00:06 INFO memory: Memory recall: user_id=5286641259 hits=8
+2026-10-04 19:00:07 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 19:00:11 INFO tools: City photo fetched for Кемерово, Кузба́сс, Россия: https://upload.wikimedia.org/wikipedia/commons/d/de/%D0%9A%D0%B5%D0%BC%D0%B5%D1%80%D0%BE%D0%B2%D0%BE2021.jpg
+2026-10-04 19:00:11 INFO tools: Weather fetched for Кемерово, Кузба́сс, Россия: temp=14.8 code=3
+2026-10-04 19:00:13 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 19:00:15 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 19:00:16 INFO memory: Memory write: user_id=5286641259 role=user id=a01ef6f1-3780-4c71-8bfa-7b00e4fceabd text='Пользователь: Какая погода в Кемерово'
+2026-10-04 19:00:16 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 19:00:17 INFO memory: Memory write: user_id=5286641259 role=assistant id=5f39fc9a-5c29-481e-ba1e-515fecabe438 text='Помощник: В Кемерово сейчас пасмурно. Температура воздуха составляет 14.8°C, но ощущается как 13.2°C. Влажность на уровн...'
+2026-10-04 19:00:17 INFO hay_telegram_bot: Reply to user_id=5286641259: В Кемерово сейчас пасмурно. Температура воздуха составляет 14.8°C, но ощущается как 13.2°C. Влажность на уровне 68%, а ветер дует со скоростью 2.41 м/с. 
+
+Фото города будет отправлено отдельным сообще...
+2026-10-04 19:00:17 INFO hay_telegram_bot: Photo sent to user_id=5286641259: https://upload.wikimedia.org/wikipedia/commons/d/de/%D0%9A%D0%B5%D0%BC%D0%B5%D1%80%D0%BE%D0%B2%D0%BE2021.jpg
+2026-10-04 19:16:15 INFO hay_telegram_bot: Incoming command from user_id=5286641259 username=mnmashkov full_name=Михаил Машков: Пользователь хочет узнать погоду. Город не указан — спроси, в каком городе показать погоду и фото.
+2026-10-04 19:16:17 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 19:16:17 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 19:16:19 INFO memory: Memory recall: user_id=5286641259 hits=6
+2026-10-04 19:16:20 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 19:16:21 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 19:16:22 INFO memory: Memory write: user_id=5286641259 role=user id=039c5ec8-8d82-44d8-a006-a089bfefcf09 text='Пользователь: Пользователь хочет узнать погоду. Город не указан — спроси, в каком городе показать погоду и фото.'
+2026-10-04 19:16:22 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 19:16:23 INFO memory: Memory write: user_id=5286641259 role=assistant id=83e0323f-c66e-4543-854b-ce053c620f7b text='Помощник: В каком городе ты хотел бы узнать погоду и увидеть фото?'
+2026-10-04 19:16:23 INFO hay_telegram_bot: Reply to user_id=5286641259: В каком городе ты хотел бы узнать погоду и увидеть фото?
+2026-10-04 19:16:36 INFO hay_telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov full_name=Михаил Машков: Мариинск
+2026-10-04 19:16:37 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 19:16:37 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 19:16:38 INFO memory: Memory recall: user_id=5286641259 hits=7
+2026-10-04 19:16:40 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 19:16:43 INFO tools: City photo fetched for Мариинск, Кузба́сс, Россия: https://upload.wikimedia.org/wikipedia/commons/6/6b/Mariinsk.jpg
+2026-10-04 19:16:43 INFO tools: Weather fetched for Мариинск, Кузба́сс, Россия: temp=13.1 code=51
+2026-10-04 19:16:44 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 19:16:45 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 19:16:46 INFO memory: Memory write: user_id=5286641259 role=user id=e744a859-ca17-4751-849d-d094d76809ef text='Пользователь: Мариинск'
+2026-10-04 19:16:47 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 19:16:48 INFO memory: Memory write: user_id=5286641259 role=assistant id=d23ee26c-ff5e-402e-9bfe-55ee9a500677 text='Помощник: В Мариинске сейчас лёгкая морось. Температура воздуха составляет 13.1°C, но ощущается как 11.1°C. Влажность на...'
+2026-10-04 19:16:48 INFO hay_telegram_bot: Reply to user_id=5286641259: В Мариинске сейчас лёгкая морось. Температура воздуха составляет 13.1°C, но ощущается как 11.1°C. Влажность на уровне 69%, а ветер дует со скоростью 2.55 м/с. 
+
+Фото города будет отправлено отдельным ...
+2026-10-04 19:16:48 INFO hay_telegram_bot: Photo sent to user_id=5286641259: https://upload.wikimedia.org/wikipedia/commons/6/6b/Mariinsk.jpg
+2026-10-04 19:17:23 INFO hay_telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov full_name=Михаил Машков: Что ты можешь рассказать о выхухоли?
+2026-10-04 19:17:24 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 19:17:24 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 19:17:26 INFO memory: Memory recall: user_id=5286641259 hits=8
+2026-10-04 19:17:29 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 19:17:30 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 19:17:31 INFO memory: Memory write: user_id=5286641259 role=user id=0affcf36-c408-471e-aa22-4864129894ec text='Пользователь: Что ты можешь рассказать о выхухоли?'
+2026-10-04 19:17:31 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 19:17:31 INFO memory: Memory write: user_id=5286641259 role=assistant id=77067863-e2a9-4fb4-bc39-5b6937e16877 text='Помощник: Выхухоль — это небольшое млекопитающее, относящееся к семейству выхухолевых. Она обитает в водоемах и болотах,...'
+2026-10-04 19:17:32 INFO hay_telegram_bot: Reply to user_id=5286641259: Выхухоль — это небольшое млекопитающее, относящееся к семейству выхухолевых. Она обитает в водоемах и болотах, предпочитая места с густой растительностью. Выхухоли имеют характерный внешний вид: у них...

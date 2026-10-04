@@ -1,0 +1,8 @@
+haystack-ai
+pinecone-haystack
+pyTelegramBotAPI
+python-dotenv
+requests
+openai
+pinecone
+docstring-parser

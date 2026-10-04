@@ -1,0 +1,461 @@
+2026-10-03 23:45:48 INFO t: test-log
+2026-10-04 00:01:38 INFO pinecone.client.indexes: Describing index 'vpg05'
+2026-10-04 00:01:39 INFO pinecone.index: Index client created for host https://vpg05-jopkxzb.svc.aped-4627-b74a.pinecone.io
+2026-10-04 00:01:39 INFO telegram_bot: Bot started. Polling... Logs: logs/bot.log, chats: logs/conversations.log
+2026-10-04 00:04:47 INFO telegram_bot: Incoming command from user_id=5286641259 username=mnmashkov: /start
+2026-10-04 00:04:51 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:04:53 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:04:54 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:04:55 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:04:55 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:04:56 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:04:56 INFO telegram_bot: Profile stored for user_id=5286641259
+2026-10-04 00:04:57 INFO telegram_bot: Reply to user_id=5286641259: Привет, Михаил Машков! Я персональный помощник.
+
+Пишите мне как обычно — я отвечу и запомню важное о вас в долговременной памяти.
+
+Команды:
+/help — справка
+/memory — что я о вас помню
+/forget — очисти...
+2026-10-04 00:15:29 INFO pinecone.client.indexes: Describing index 'vpg05'
+2026-10-04 00:15:30 INFO pinecone.index: Index client created for host https://vpg05-jopkxzb.svc.aped-4627-b74a.pinecone.io
+2026-10-04 00:15:31 INFO telegram_bot: Bot command menu registered: /start, /help, /memory, /forget, /reset
+2026-10-04 00:15:31 INFO telegram_bot: Bot started. Polling... Logs: logs/bot.log, chats: logs/conversations.log
+2026-10-04 00:17:48 INFO telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov: Зачем люди хотят лететь на Марс?
+2026-10-04 00:17:52 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:17:52 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 00:17:55 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:17:56 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:17:56 INFO telegram_bot: Reply to user_id=5286641259: Люди хотят лететь на Марс для исследования, поиска жизни, освоения новых ресурсов и расширения горизонтов человечества. Это также шаг к колонизации других планет.
+2026-10-04 00:19:19 INFO telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov: Расскажи о себе что ты можешь?
+2026-10-04 00:19:20 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:19:20 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 00:19:25 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:19:26 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:19:26 INFO telegram_bot: Reply to user_id=5286641259: Я — твой персональный помощник в Telegram. Могу отвечать на вопросы, давать советы, помогать с планированием и предоставлять информацию по различным темам. Как я могу помочь тебе сегодня?
+2026-10-04 00:20:00 INFO telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov: Запланируй на завтра встречу на 14.00
+2026-10-04 00:20:03 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:20:03 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 00:20:06 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:20:07 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:20:08 INFO telegram_bot: Reply to user_id=5286641259: К сожалению, я не могу напрямую запланировать встречи в календаре. Могу напомнить тебе об этом или помочь с чем-то другим. Как именно ты хочешь, чтобы я помог?
+2026-10-04 00:21:02 INFO telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov: Напомни сам, без календаря за час до события
+2026-10-04 00:21:03 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:21:03 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 00:21:06 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:21:07 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:21:07 INFO telegram_bot: Reply to user_id=5286641259: Хорошо, напомню тебе о встрече на завтра в 13:00. Если что-то изменится, дай знать!
+2026-10-04 00:28:09 INFO pinecone.client.indexes: Describing index 'vpg05'
+2026-10-04 00:28:10 INFO pinecone.index: Index client created for host https://vpg05-jopkxzb.svc.aped-4627-b74a.pinecone.io
+2026-10-04 00:28:11 INFO telegram_bot: Bot command menu registered: /start, /help, /memory, /forget, /reset
+2026-10-04 00:28:11 INFO telegram_bot: Bot started. Polling... Logs: logs/bot.log, chats: logs/conversations.log
+2026-10-04 00:29:39 INFO telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov: Я тобой пользуюсь впервые, что можешь рассказать?
+2026-10-04 00:29:40 INFO assistant: Memory recall: user_id=5286641259 top_k=8 query='Я тобой пользуюсь впервые, что можешь рассказать?'
+2026-10-04 00:29:43 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:29:43 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 00:29:44 INFO assistant: Memory recall result: user_id=5286641259 facts=3
+2026-10-04 00:29:46 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:29:46 INFO assistant: Memory write requested: user_id=5286641259 source=message text='Я тобой пользуюсь впервые, что можешь рассказать?'
+2026-10-04 00:29:46 INFO pinecone_manager: Pinecone memory check start: text='Я тобой пользуюсь впервые, что можешь рассказать?' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:29:46 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:29:46 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:29:47 INFO pinecone_manager: Pinecone threshold decision: similarity=0.2577 threshold=0.8500 compared=id='4b935010-efec-471a-b444-ffce9d770bba' same_text=False decision=stored
+2026-10-04 00:29:47 INFO pinecone_manager: Pinecone write stored: id=4d1ef771-f665-4f6d-801b-d0298372b85b similarity=0.2577 threshold=0.8500 metadata_keys=['source', 'text', 'user_id'] text='Я тобой пользуюсь впервые, что можешь рассказать?'
+2026-10-04 00:29:47 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:30:19 INFO pinecone_manager: Pinecone upsert finished: action=stored id=4d1ef771-f665-4f6d-801b-d0298372b85b
+2026-10-04 00:30:19 INFO assistant: Memory write result: user_id=5286641259 source=message action=stored id=4d1ef771-f665-4f6d-801b-d0298372b85b similarity=0.2577 threshold=0.8500
+2026-10-04 00:30:19 INFO assistant: Fact extraction start: text='Я тобой пользуюсь впервые, что можешь рассказать?'
+2026-10-04 00:30:20 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:30:20 INFO assistant: Fact extraction result: count=0 facts=[]
+2026-10-04 00:30:20 INFO assistant: No structured facts extracted for user_id=5286641259; raw message already indexed
+2026-10-04 00:30:20 INFO telegram_bot: Reply to user_id=5286641259: Я могу помочь с планированием задач, напоминаниями, поиском информации и ответами на вопросы. Если у тебя есть что-то конкретное, с чем нужна помощь, просто дай знать!
+2026-10-04 00:32:37 INFO telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov: Подскажи есть ли у меня запланированные встречи на завтра
+2026-10-04 00:32:37 INFO assistant: Memory recall: user_id=5286641259 top_k=8 query='Подскажи есть ли у меня запланированные встречи на завтра'
+2026-10-04 00:32:39 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:32:39 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 00:32:40 INFO assistant: Memory recall result: user_id=5286641259 facts=4
+2026-10-04 00:32:42 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:32:42 INFO assistant: Memory write requested: user_id=5286641259 source=message text='Подскажи есть ли у меня запланированные встречи на завтра'
+2026-10-04 00:32:42 INFO pinecone_manager: Pinecone memory check start: text='Подскажи есть ли у меня запланированные встречи на завтра' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:32:43 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:32:43 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:32:44 INFO pinecone_manager: Pinecone threshold decision: similarity=0.6213 threshold=0.8500 compared=id='8a79456d-2ada-4c71-ac8e-a23f5fbf4449' same_text=False decision=stored
+2026-10-04 00:32:44 INFO pinecone_manager: Pinecone write stored: id=a05309c9-1bf3-4564-8d8d-9b8d98e11da0 similarity=0.6213 threshold=0.8500 metadata_keys=['source', 'text', 'user_id'] text='Подскажи есть ли у меня запланированные встречи на завтра'
+2026-10-04 00:32:44 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:32:44 INFO pinecone_manager: Pinecone upsert finished: action=stored id=a05309c9-1bf3-4564-8d8d-9b8d98e11da0
+2026-10-04 00:32:44 INFO assistant: Memory write result: user_id=5286641259 source=message action=stored id=a05309c9-1bf3-4564-8d8d-9b8d98e11da0 similarity=0.6213 threshold=0.8500
+2026-10-04 00:32:44 INFO assistant: Fact extraction start: text='Подскажи есть ли у меня запланированные встречи на завтра'
+2026-10-04 00:32:45 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:32:45 INFO assistant: Fact extraction result: count=0 facts=[]
+2026-10-04 00:32:45 INFO assistant: No structured facts extracted for user_id=5286641259; raw message already indexed
+2026-10-04 00:32:45 INFO telegram_bot: Reply to user_id=5286641259: У тебя запланирована встреча на завтра в 14:00.
+2026-10-04 00:35:03 INFO pinecone.client.indexes: Describing index 'vpg05'
+2026-10-04 00:35:04 INFO pinecone.index: Index client created for host https://vpg05-jopkxzb.svc.aped-4627-b74a.pinecone.io
+2026-10-04 00:35:05 INFO telegram_bot: Bot command menu registered: /start, /help, /memory, /forget, /reset
+2026-10-04 00:35:05 INFO telegram_bot: Bot started. Polling... Logs: logs/bot.log, chats: logs/conversations.log
+2026-10-04 00:35:42 INFO telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov: Напомни, что ты мне отвечал в предыдущих пяти сообщениях
+2026-10-04 00:35:43 INFO assistant: Memory recall: user_id=5286641259 top_k=8 query='Напомни, что ты мне отвечал в предыдущих пяти сообщениях'
+2026-10-04 00:35:46 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:35:46 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 00:35:47 INFO assistant: Memory recall result: user_id=5286641259 facts=5
+2026-10-04 00:35:49 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:35:49 INFO assistant: Memory write requested: user_id=5286641259 source=user_message text='Напомни, что ты мне отвечал в предыдущих пяти сообщениях'
+2026-10-04 00:35:49 INFO pinecone_manager: Pinecone memory check start: text='Напомни, что ты мне отвечал в предыдущих пяти сообщениях' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:35:49 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:35:49 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:35:50 INFO pinecone_manager: Pinecone threshold decision: similarity=0.3321 threshold=0.8500 compared=id='4d1ef771-f665-4f6d-801b-d0298372b85b' same_text=False decision=stored
+2026-10-04 00:35:50 INFO pinecone_manager: Pinecone write stored: id=0883da9b-166f-4676-ae20-ba22a2fd8aae similarity=0.3321 threshold=0.8500 metadata_keys=['source', 'text', 'user_id'] text='Напомни, что ты мне отвечал в предыдущих пяти сообщениях'
+2026-10-04 00:35:50 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:35:50 INFO pinecone_manager: Pinecone upsert finished: action=stored id=0883da9b-166f-4676-ae20-ba22a2fd8aae
+2026-10-04 00:35:50 INFO assistant: Memory write result: user_id=5286641259 source=user_message action=stored id=0883da9b-166f-4676-ae20-ba22a2fd8aae similarity=0.3321 threshold=0.8500
+2026-10-04 00:35:50 INFO assistant: Memory write requested: user_id=5286641259 source=bot_message text='Извини, я не могу показать предыдущие сообщения. Но могу помочь с любым вопросом или напомнить о чем-то конкретном!'
+2026-10-04 00:35:50 INFO pinecone_manager: Pinecone memory check start: text='Извини, я не могу показать предыдущие сообщения. Но могу помочь с любым вопросом или напомнить о чем-то конкретном!' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:35:51 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:35:51 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:35:51 INFO pinecone_manager: Pinecone threshold decision: similarity=0.4694 threshold=0.8500 compared=id='0883da9b-166f-4676-ae20-ba22a2fd8aae' same_text=False decision=stored
+2026-10-04 00:35:51 INFO pinecone_manager: Pinecone write stored: id=85e1b6b2-1939-4474-b0e2-65351402400b similarity=0.4694 threshold=0.8500 metadata_keys=['source', 'text', 'user_id'] text='Извини, я не могу показать предыдущие сообщения. Но могу помочь с любым вопросом или напомнить о чем-то конкретном!'
+2026-10-04 00:35:51 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:35:52 INFO pinecone_manager: Pinecone upsert finished: action=stored id=85e1b6b2-1939-4474-b0e2-65351402400b
+2026-10-04 00:35:52 INFO assistant: Memory write result: user_id=5286641259 source=bot_message action=stored id=85e1b6b2-1939-4474-b0e2-65351402400b similarity=0.4694 threshold=0.8500
+2026-10-04 00:35:52 INFO assistant: Fact extraction start: text='Напомни, что ты мне отвечал в предыдущих пяти сообщениях'
+2026-10-04 00:35:53 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:35:53 INFO assistant: Fact extraction result: count=0 facts=[]
+2026-10-04 00:35:53 INFO assistant: No structured facts extracted for user_id=5286641259; turn messages already indexed
+2026-10-04 00:35:53 INFO telegram_bot: Reply to user_id=5286641259: Извини, я не могу показать предыдущие сообщения. Но могу помочь с любым вопросом или напомнить о чем-то конкретном!
+2026-10-04 00:38:02 INFO telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov: Что надо чтобы полететь на Луну?
+2026-10-04 00:38:02 INFO assistant: Memory recall: user_id=5286641259 top_k=8 query='Что надо чтобы полететь на Луну?'
+2026-10-04 00:38:04 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:38:04 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 00:38:05 INFO assistant: Memory recall result: user_id=5286641259 facts=7
+2026-10-04 00:38:07 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:38:07 INFO assistant: Memory write requested: user_id=5286641259 source=user_message text='Что надо чтобы полететь на Луну?'
+2026-10-04 00:38:07 INFO pinecone_manager: Pinecone memory check start: text='Что надо чтобы полететь на Луну?' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:38:08 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:38:08 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:38:08 INFO pinecone_manager: Pinecone threshold decision: similarity=0.1864 threshold=0.8500 compared=id='8a79456d-2ada-4c71-ac8e-a23f5fbf4449' same_text=False decision=stored
+2026-10-04 00:38:08 INFO pinecone_manager: Pinecone write stored: id=47039295-9222-4e0a-ab29-1a702c762cf7 similarity=0.1864 threshold=0.8500 metadata_keys=['source', 'text', 'user_id'] text='Что надо чтобы полететь на Луну?'
+2026-10-04 00:38:08 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:38:09 INFO pinecone_manager: Pinecone upsert finished: action=stored id=47039295-9222-4e0a-ab29-1a702c762cf7
+2026-10-04 00:38:09 INFO assistant: Memory write result: user_id=5286641259 source=user_message action=stored id=47039295-9222-4e0a-ab29-1a702c762cf7 similarity=0.1864 threshold=0.8500
+2026-10-04 00:38:09 INFO assistant: Memory write requested: user_id=5286641259 source=bot_message text='Чтобы полететь на Луну, нужны: \n\n1. Космический корабль, способный преодолеть земное притяжение.\n2. Ракетное топливо.\n3....'
+2026-10-04 00:38:09 INFO pinecone_manager: Pinecone memory check start: text='Чтобы полететь на Луну, нужны: \n\n1. Космический корабль, способный преодолеть земное притяжение.\n2. Ракетное топливо.\n3....' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:38:09 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:38:09 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:38:10 INFO pinecone_manager: Pinecone threshold decision: similarity=0.7559 threshold=0.8500 compared=id='47039295-9222-4e0a-ab29-1a702c762cf7' same_text=False decision=stored
+2026-10-04 00:38:10 INFO pinecone_manager: Pinecone write stored: id=54f7a9b3-7101-4e71-b76a-c6850f1de13c similarity=0.7559 threshold=0.8500 metadata_keys=['source', 'text', 'user_id'] text='Чтобы полететь на Луну, нужны: \n\n1. Космический корабль, способный преодолеть земное притяжение.\n2. Ракетное топливо.\n3....'
+2026-10-04 00:38:10 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:38:10 INFO pinecone_manager: Pinecone upsert finished: action=stored id=54f7a9b3-7101-4e71-b76a-c6850f1de13c
+2026-10-04 00:38:10 INFO assistant: Memory write result: user_id=5286641259 source=bot_message action=stored id=54f7a9b3-7101-4e71-b76a-c6850f1de13c similarity=0.7559 threshold=0.8500
+2026-10-04 00:38:10 INFO assistant: Fact extraction start: text='Что надо чтобы полететь на Луну?'
+2026-10-04 00:38:11 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:38:11 INFO assistant: Fact extraction result: count=0 facts=[]
+2026-10-04 00:38:11 INFO assistant: No structured facts extracted for user_id=5286641259; turn messages already indexed
+2026-10-04 00:38:11 INFO telegram_bot: Reply to user_id=5286641259: Чтобы полететь на Луну, нужны: 
+
+1. Космический корабль, способный преодолеть земное притяжение.
+2. Ракетное топливо.
+3. Экипаж или автоматические системы.
+4. Подготовка и планирование миссии.
+
+Если и...
+2026-10-04 00:38:49 INFO telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov: Что из космических кораблей посоветуешь?
+2026-10-04 00:38:50 INFO assistant: Memory recall: user_id=5286641259 top_k=8 query='Что из космических кораблей посоветуешь?'
+2026-10-04 00:38:51 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:38:51 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 00:38:52 INFO assistant: Memory recall result: user_id=5286641259 facts=8
+2026-10-04 00:38:54 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:38:54 INFO assistant: Memory write requested: user_id=5286641259 source=user_message text='Что из космических кораблей посоветуешь?'
+2026-10-04 00:38:54 INFO pinecone_manager: Pinecone memory check start: text='Что из космических кораблей посоветуешь?' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:38:55 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:38:55 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:38:55 INFO pinecone_manager: Pinecone threshold decision: similarity=0.5013 threshold=0.8500 compared=id='54f7a9b3-7101-4e71-b76a-c6850f1de13c' same_text=False decision=stored
+2026-10-04 00:38:55 INFO pinecone_manager: Pinecone write stored: id=23e3d595-51c0-4409-a8bb-ac66cd2da3d9 similarity=0.5013 threshold=0.8500 metadata_keys=['source', 'text', 'user_id'] text='Что из космических кораблей посоветуешь?'
+2026-10-04 00:38:55 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:38:56 INFO pinecone_manager: Pinecone upsert finished: action=stored id=23e3d595-51c0-4409-a8bb-ac66cd2da3d9
+2026-10-04 00:38:56 INFO assistant: Memory write result: user_id=5286641259 source=user_message action=stored id=23e3d595-51c0-4409-a8bb-ac66cd2da3d9 similarity=0.5013 threshold=0.8500
+2026-10-04 00:38:56 INFO assistant: Memory write requested: user_id=5286641259 source=bot_message text='Для полета на Луну подойдут:\n\n1. **Apollo** — классический корабль для миссий к Луне.\n2. **Orion** — современный корабль...'
+2026-10-04 00:38:56 INFO pinecone_manager: Pinecone memory check start: text='Для полета на Луну подойдут:\n\n1. **Apollo** — классический корабль для миссий к Луне.\n2. **Orion** — современный корабль...' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:38:56 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:38:56 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:38:57 INFO pinecone_manager: Pinecone threshold decision: similarity=0.6860 threshold=0.8500 compared=id='54f7a9b3-7101-4e71-b76a-c6850f1de13c' same_text=False decision=stored
+2026-10-04 00:38:57 INFO pinecone_manager: Pinecone write stored: id=9b6bc0c7-5da9-4ca9-8d83-208d7247a81c similarity=0.6860 threshold=0.8500 metadata_keys=['source', 'text', 'user_id'] text='Для полета на Луну подойдут:\n\n1. **Apollo** — классический корабль для миссий к Луне.\n2. **Orion** — современный корабль...'
+2026-10-04 00:38:57 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:38:57 INFO pinecone_manager: Pinecone upsert finished: action=stored id=9b6bc0c7-5da9-4ca9-8d83-208d7247a81c
+2026-10-04 00:38:57 INFO assistant: Memory write result: user_id=5286641259 source=bot_message action=stored id=9b6bc0c7-5da9-4ca9-8d83-208d7247a81c similarity=0.6860 threshold=0.8500
+2026-10-04 00:38:57 INFO assistant: Fact extraction start: text='Что из космических кораблей посоветуешь?'
+2026-10-04 00:38:59 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:38:59 INFO assistant: Fact extraction result: count=0 facts=[]
+2026-10-04 00:38:59 INFO assistant: No structured facts extracted for user_id=5286641259; turn messages already indexed
+2026-10-04 00:38:59 INFO telegram_bot: Reply to user_id=5286641259: Для полета на Луну подойдут:
+
+1. **Apollo** — классический корабль для миссий к Луне.
+2. **Orion** — современный корабль NASA для глубококосмических миссий.
+3. **SpaceX Starship** — многоразовый кораб...
+2026-10-04 00:40:30 INFO telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov: Характеристики и стоимость, и есть ли не американские аналоги?
+2026-10-04 00:40:31 INFO assistant: Memory recall: user_id=5286641259 top_k=8 query='Характеристики и стоимость, и есть ли не американские аналоги?'
+2026-10-04 00:40:32 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:40:32 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 00:40:33 INFO assistant: Memory recall result: user_id=5286641259 facts=8
+2026-10-04 00:40:38 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:40:38 INFO assistant: Memory write requested: user_id=5286641259 source=user_message text='Характеристики и стоимость, и есть ли не американские аналоги?'
+2026-10-04 00:40:38 INFO pinecone_manager: Pinecone memory check start: text='Характеристики и стоимость, и есть ли не американские аналоги?' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:40:39 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:40:39 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:40:40 INFO pinecone_manager: Pinecone threshold decision: similarity=0.2829 threshold=0.8500 compared=id='9b6bc0c7-5da9-4ca9-8d83-208d7247a81c' same_text=False decision=stored
+2026-10-04 00:40:40 INFO pinecone_manager: Pinecone write stored: id=2b21939e-2ecd-465f-ad18-03dbfccde666 similarity=0.2829 threshold=0.8500 metadata_keys=['source', 'text', 'user_id'] text='Характеристики и стоимость, и есть ли не американские аналоги?'
+2026-10-04 00:40:40 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:40:41 INFO pinecone_manager: Pinecone upsert finished: action=stored id=2b21939e-2ecd-465f-ad18-03dbfccde666
+2026-10-04 00:40:41 INFO assistant: Memory write result: user_id=5286641259 source=user_message action=stored id=2b21939e-2ecd-465f-ad18-03dbfccde666 similarity=0.2829 threshold=0.8500
+2026-10-04 00:40:41 INFO assistant: Memory write requested: user_id=5286641259 source=bot_message text='**Apollo**: \n- Характеристики: 3 модуля (командный, лунный, сервисный), 3 человека в экипаже, максимальная масса около 3...'
+2026-10-04 00:40:41 INFO pinecone_manager: Pinecone memory check start: text='**Apollo**: \n- Характеристики: 3 модуля (командный, лунный, сервисный), 3 человека в экипаже, максимальная масса около 3...' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:40:41 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:40:41 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:40:42 INFO pinecone_manager: Pinecone threshold decision: similarity=0.7577 threshold=0.8500 compared=id='9b6bc0c7-5da9-4ca9-8d83-208d7247a81c' same_text=False decision=stored
+2026-10-04 00:40:42 INFO pinecone_manager: Pinecone write stored: id=0a79a1f3-2e90-449b-8177-f912a46580e6 similarity=0.7577 threshold=0.8500 metadata_keys=['source', 'text', 'user_id'] text='**Apollo**: \n- Характеристики: 3 модуля (командный, лунный, сервисный), 3 человека в экипаже, максимальная масса около 3...'
+2026-10-04 00:40:42 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:40:42 INFO pinecone_manager: Pinecone upsert finished: action=stored id=0a79a1f3-2e90-449b-8177-f912a46580e6
+2026-10-04 00:40:42 INFO assistant: Memory write result: user_id=5286641259 source=bot_message action=stored id=0a79a1f3-2e90-449b-8177-f912a46580e6 similarity=0.7577 threshold=0.8500
+2026-10-04 00:40:42 INFO assistant: Fact extraction start: text='Характеристики и стоимость, и есть ли не американские аналоги?'
+2026-10-04 00:40:43 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:40:43 INFO assistant: Fact extraction result: count=0 facts=[]
+2026-10-04 00:40:43 INFO assistant: No structured facts extracted for user_id=5286641259; turn messages already indexed
+2026-10-04 00:40:43 INFO telegram_bot: Reply to user_id=5286641259: **Apollo**: 
+- Характеристики: 3 модуля (командный, лунный, сервисный), 3 человека в экипаже, максимальная масса около 30 тонн.
+- Стоимость: около 25 миллиардов долларов (по современным ценам).
+
+**Ori...
+2026-10-04 00:41:53 INFO telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov: SpaceX Starship подходит, где его можно купить?
+2026-10-04 00:41:54 INFO assistant: Memory recall: user_id=5286641259 top_k=8 query='SpaceX Starship подходит, где его можно купить?'
+2026-10-04 00:41:55 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:41:55 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 00:41:57 INFO assistant: Memory recall result: user_id=5286641259 facts=8
+2026-10-04 00:41:59 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:41:59 INFO assistant: Memory write requested: user_id=5286641259 source=user_message text='SpaceX Starship подходит, где его можно купить?'
+2026-10-04 00:41:59 INFO pinecone_manager: Pinecone memory check start: text='SpaceX Starship подходит, где его можно купить?' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:41:59 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:41:59 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:42:00 INFO pinecone_manager: Pinecone threshold decision: similarity=0.5038 threshold=0.8500 compared=id='0a79a1f3-2e90-449b-8177-f912a46580e6' same_text=False decision=stored
+2026-10-04 00:42:00 INFO pinecone_manager: Pinecone write stored: id=0ced10c7-6d07-430f-bfcc-d65617840370 similarity=0.5038 threshold=0.8500 metadata_keys=['source', 'text', 'user_id'] text='SpaceX Starship подходит, где его можно купить?'
+2026-10-04 00:42:00 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:42:00 INFO pinecone_manager: Pinecone upsert finished: action=stored id=0ced10c7-6d07-430f-bfcc-d65617840370
+2026-10-04 00:42:00 INFO assistant: Memory write result: user_id=5286641259 source=user_message action=stored id=0ced10c7-6d07-430f-bfcc-d65617840370 similarity=0.5038 threshold=0.8500
+2026-10-04 00:42:00 INFO assistant: Memory write requested: user_id=5286641259 source=bot_message text='SpaceX Starship не продается как товар. Это космический корабль, разрабатываемый компанией SpaceX для своих собственных ...'
+2026-10-04 00:42:00 INFO pinecone_manager: Pinecone memory check start: text='SpaceX Starship не продается как товар. Это космический корабль, разрабатываемый компанией SpaceX для своих собственных ...' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:42:01 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:42:01 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:42:01 INFO pinecone_manager: Pinecone threshold decision: similarity=0.7418 threshold=0.8500 compared=id='0ced10c7-6d07-430f-bfcc-d65617840370' same_text=False decision=stored
+2026-10-04 00:42:01 INFO pinecone_manager: Pinecone write stored: id=e50dc65e-5e57-4495-8b8f-ef6317363e59 similarity=0.7418 threshold=0.8500 metadata_keys=['source', 'text', 'user_id'] text='SpaceX Starship не продается как товар. Это космический корабль, разрабатываемый компанией SpaceX для своих собственных ...'
+2026-10-04 00:42:01 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:42:02 INFO pinecone_manager: Pinecone upsert finished: action=stored id=e50dc65e-5e57-4495-8b8f-ef6317363e59
+2026-10-04 00:42:02 INFO assistant: Memory write result: user_id=5286641259 source=bot_message action=stored id=e50dc65e-5e57-4495-8b8f-ef6317363e59 similarity=0.7418 threshold=0.8500
+2026-10-04 00:42:02 INFO assistant: Fact extraction start: text='SpaceX Starship подходит, где его можно купить?'
+2026-10-04 00:42:03 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:42:03 INFO assistant: Fact extraction result: count=0 facts=[]
+2026-10-04 00:42:03 INFO assistant: No structured facts extracted for user_id=5286641259; turn messages already indexed
+2026-10-04 00:42:03 INFO telegram_bot: Reply to user_id=5286641259: SpaceX Starship не продается как товар. Это космический корабль, разрабатываемый компанией SpaceX для своих собственных миссий. Если ты заинтересован в полете на Starship, нужно следить за анонсами ко...
+2026-10-04 00:46:26 INFO telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov: Жаль
+2026-10-04 00:46:26 INFO assistant: Memory recall: user_id=5286641259 top_k=8 query='Жаль'
+2026-10-04 00:46:27 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:46:27 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 00:46:28 INFO assistant: Memory recall result: user_id=5286641259 facts=8
+2026-10-04 00:46:30 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:46:30 INFO assistant: Memory write requested: user_id=5286641259 source=user_message text='Жаль'
+2026-10-04 00:46:30 INFO pinecone_manager: Pinecone memory check start: text='Жаль' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:46:31 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:46:31 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:46:31 INFO pinecone_manager: Pinecone threshold decision: similarity=0.2781 threshold=0.8500 compared=id='85e1b6b2-1939-4474-b0e2-65351402400b' same_text=False decision=stored
+2026-10-04 00:46:31 INFO pinecone_manager: Pinecone write stored: id=418e6a60-c2f9-4add-a063-e8372cab4209 similarity=0.2781 threshold=0.8500 metadata_keys=['source', 'text', 'user_id'] text='Жаль'
+2026-10-04 00:46:31 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:46:32 INFO pinecone_manager: Pinecone upsert finished: action=stored id=418e6a60-c2f9-4add-a063-e8372cab4209
+2026-10-04 00:46:32 INFO assistant: Memory write result: user_id=5286641259 source=user_message action=stored id=418e6a60-c2f9-4add-a063-e8372cab4209 similarity=0.2781 threshold=0.8500
+2026-10-04 00:46:32 INFO assistant: Memory write requested: user_id=5286641259 source=bot_message text='Понимаю, это действительно жаль. Если есть другие вопросы или интересы в космосе, дай знать!'
+2026-10-04 00:46:32 INFO pinecone_manager: Pinecone memory check start: text='Понимаю, это действительно жаль. Если есть другие вопросы или интересы в космосе, дай знать!' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:46:32 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:46:32 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:46:33 INFO pinecone_manager: Pinecone threshold decision: similarity=0.4056 threshold=0.8500 compared=id='9b6bc0c7-5da9-4ca9-8d83-208d7247a81c' same_text=False decision=stored
+2026-10-04 00:46:33 INFO pinecone_manager: Pinecone write stored: id=6512549b-945d-4d8f-82fe-cea3cb1ab84a similarity=0.4056 threshold=0.8500 metadata_keys=['source', 'text', 'user_id'] text='Понимаю, это действительно жаль. Если есть другие вопросы или интересы в космосе, дай знать!'
+2026-10-04 00:46:33 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:46:33 INFO pinecone_manager: Pinecone upsert finished: action=stored id=6512549b-945d-4d8f-82fe-cea3cb1ab84a
+2026-10-04 00:46:33 INFO assistant: Memory write result: user_id=5286641259 source=bot_message action=stored id=6512549b-945d-4d8f-82fe-cea3cb1ab84a similarity=0.4056 threshold=0.8500
+2026-10-04 00:46:33 INFO assistant: Fact extraction start: text='Жаль'
+2026-10-04 00:46:34 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:46:34 INFO assistant: Fact extraction result: count=0 facts=[]
+2026-10-04 00:46:34 INFO assistant: No structured facts extracted for user_id=5286641259; turn messages already indexed
+2026-10-04 00:46:34 INFO telegram_bot: Reply to user_id=5286641259: Понимаю, это действительно жаль. Если есть другие вопросы или интересы в космосе, дай знать!
+2026-10-04 00:47:43 INFO telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov: Расскажи о том, что ты мне писал в последних трех сообщениях
+2026-10-04 00:47:44 INFO assistant: Memory recall: user_id=5286641259 top_k=8 query='Расскажи о том, что ты мне писал в последних трех сообщениях'
+2026-10-04 00:47:45 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:47:45 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 00:47:46 INFO assistant: Memory recall result: user_id=5286641259 facts=8
+2026-10-04 00:47:48 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:47:48 INFO assistant: Memory write requested: user_id=5286641259 source=user_message text='Расскажи о том, что ты мне писал в последних трех сообщениях'
+2026-10-04 00:47:48 INFO pinecone_manager: Pinecone memory check start: text='Расскажи о том, что ты мне писал в последних трех сообщениях' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:47:48 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:47:48 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:47:49 INFO pinecone_manager: Pinecone threshold decision: similarity=0.6690 threshold=0.8500 compared=id='0883da9b-166f-4676-ae20-ba22a2fd8aae' same_text=False decision=stored
+2026-10-04 00:47:49 INFO pinecone_manager: Pinecone write stored: id=75dca061-2ed0-43b3-bced-bfe889fa4e5b similarity=0.6690 threshold=0.8500 metadata_keys=['source', 'text', 'user_id'] text='Расскажи о том, что ты мне писал в последних трех сообщениях'
+2026-10-04 00:47:49 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:47:49 INFO pinecone_manager: Pinecone upsert finished: action=stored id=75dca061-2ed0-43b3-bced-bfe889fa4e5b
+2026-10-04 00:47:49 INFO assistant: Memory write result: user_id=5286641259 source=user_message action=stored id=75dca061-2ed0-43b3-bced-bfe889fa4e5b similarity=0.6690 threshold=0.8500
+2026-10-04 00:47:49 INFO assistant: Memory write requested: user_id=5286641259 source=bot_message text='Извини, я не могу показать предыдущие сообщения. Но могу помочь с любым вопросом или напомнить о чем-то конкретном!'
+2026-10-04 00:47:49 INFO pinecone_manager: Pinecone memory check start: text='Извини, я не могу показать предыдущие сообщения. Но могу помочь с любым вопросом или напомнить о чем-то конкретном!' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:47:51 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:47:51 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:47:51 INFO pinecone_manager: Pinecone threshold decision: similarity=1.0000 threshold=0.8500 compared=id='85e1b6b2-1939-4474-b0e2-65351402400b' same_text=True decision=skipped
+2026-10-04 00:47:51 INFO pinecone_manager: Pinecone write skipped (duplicate): id=85e1b6b2-1939-4474-b0e2-65351402400b similarity=1.0000 threshold=0.8500 text='Извини, я не могу показать предыдущие сообщения. Но могу помочь с любым вопросом или напомнить о чем-то конкретном!'
+2026-10-04 00:47:51 INFO assistant: Memory write result: user_id=5286641259 source=bot_message action=skipped id=85e1b6b2-1939-4474-b0e2-65351402400b similarity=1.0000 threshold=0.8500
+2026-10-04 00:47:51 INFO assistant: Fact extraction start: text='Расскажи о том, что ты мне писал в последних трех сообщениях'
+2026-10-04 00:47:52 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:47:52 INFO assistant: Fact extraction result: count=0 facts=[]
+2026-10-04 00:47:52 INFO assistant: No structured facts extracted for user_id=5286641259; turn messages already indexed
+2026-10-04 00:47:52 INFO telegram_bot: Reply to user_id=5286641259: Извини, я не могу показать предыдущие сообщения. Но могу помочь с любым вопросом или напомнить о чем-то конкретном!
+2026-10-04 00:50:37 INFO telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov: Что надо чтобы полететь на Шри-Ланку?
+2026-10-04 00:50:38 INFO assistant: Memory recall: user_id=5286641259 top_k=8 query='Что надо чтобы полететь на Шри-Ланку?'
+2026-10-04 00:50:39 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:50:39 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 00:50:40 INFO assistant: Memory recall result: user_id=5286641259 facts=8
+2026-10-04 00:50:43 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:50:43 INFO assistant: Memory write requested: user_id=5286641259 source=user_message text='Что надо чтобы полететь на Шри-Ланку?'
+2026-10-04 00:50:43 INFO pinecone_manager: Pinecone memory check start: text='Что надо чтобы полететь на Шри-Ланку?' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:50:43 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:50:43 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:50:44 INFO pinecone_manager: Pinecone threshold decision: similarity=0.6322 threshold=0.8500 compared=id='47039295-9222-4e0a-ab29-1a702c762cf7' same_text=False decision=stored
+2026-10-04 00:50:44 INFO pinecone_manager: Pinecone write stored: id=d1643a91-0448-4920-9b79-f240224c31bc similarity=0.6322 threshold=0.8500 metadata_keys=['source', 'text', 'user_id'] text='Что надо чтобы полететь на Шри-Ланку?'
+2026-10-04 00:50:44 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:50:44 INFO pinecone_manager: Pinecone upsert finished: action=stored id=d1643a91-0448-4920-9b79-f240224c31bc
+2026-10-04 00:50:44 INFO assistant: Memory write result: user_id=5286641259 source=user_message action=stored id=d1643a91-0448-4920-9b79-f240224c31bc similarity=0.6322 threshold=0.8500
+2026-10-04 00:50:44 INFO assistant: Memory write requested: user_id=5286641259 source=bot_message text='Чтобы полететь на Шри-Ланку, нужны:\n\n1. Заграничный паспорт.\n2. Виза (можно получить онлайн).\n3. Билеты на самолет.\n4. М...'
+2026-10-04 00:50:44 INFO pinecone_manager: Pinecone memory check start: text='Чтобы полететь на Шри-Ланку, нужны:\n\n1. Заграничный паспорт.\n2. Виза (можно получить онлайн).\n3. Билеты на самолет.\n4. М...' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:50:46 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:50:46 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:50:46 INFO pinecone_manager: Pinecone threshold decision: similarity=0.8292 threshold=0.8500 compared=id='d1643a91-0448-4920-9b79-f240224c31bc' same_text=False decision=stored
+2026-10-04 00:50:46 INFO pinecone_manager: Pinecone write stored: id=826f4431-246e-4d1d-8ca1-d023d8261328 similarity=0.8292 threshold=0.8500 metadata_keys=['source', 'text', 'user_id'] text='Чтобы полететь на Шри-Ланку, нужны:\n\n1. Заграничный паспорт.\n2. Виза (можно получить онлайн).\n3. Билеты на самолет.\n4. М...'
+2026-10-04 00:50:46 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:50:46 INFO pinecone_manager: Pinecone upsert finished: action=stored id=826f4431-246e-4d1d-8ca1-d023d8261328
+2026-10-04 00:50:46 INFO assistant: Memory write result: user_id=5286641259 source=bot_message action=stored id=826f4431-246e-4d1d-8ca1-d023d8261328 similarity=0.8292 threshold=0.8500
+2026-10-04 00:50:46 INFO assistant: Fact extraction start: text='Что надо чтобы полететь на Шри-Ланку?'
+2026-10-04 00:50:47 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:50:47 INFO assistant: Fact extraction result: count=0 facts=[]
+2026-10-04 00:50:47 INFO assistant: No structured facts extracted for user_id=5286641259; turn messages already indexed
+2026-10-04 00:50:47 INFO telegram_bot: Reply to user_id=5286641259: Чтобы полететь на Шри-Ланку, нужны:
+
+1. Заграничный паспорт.
+2. Виза (можно получить онлайн).
+3. Билеты на самолет.
+4. Медицинская страховка (рекомендуется).
+5. Подготовка к поездке (например, вакцина...
+2026-10-04 00:52:14 INFO telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov: С какими странами у Шри-Ланки безвиз?
+2026-10-04 00:52:14 INFO assistant: Memory recall: user_id=5286641259 top_k=8 query='С какими странами у Шри-Ланки безвиз?'
+2026-10-04 00:52:15 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:52:15 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 00:52:16 INFO assistant: Memory recall result: user_id=5286641259 facts=8
+2026-10-04 00:52:18 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:52:18 INFO assistant: Memory write requested: user_id=5286641259 source=user_message text='С какими странами у Шри-Ланки безвиз?'
+2026-10-04 00:52:18 INFO pinecone_manager: Pinecone memory check start: text='С какими странами у Шри-Ланки безвиз?' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:52:19 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:52:19 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:52:20 INFO pinecone_manager: Pinecone threshold decision: similarity=0.6408 threshold=0.8500 compared=id='826f4431-246e-4d1d-8ca1-d023d8261328' same_text=False decision=stored
+2026-10-04 00:52:20 INFO pinecone_manager: Pinecone write stored: id=49d30f4c-a6b9-4720-b513-ed923f8c88bc similarity=0.6408 threshold=0.8500 metadata_keys=['source', 'text', 'user_id'] text='С какими странами у Шри-Ланки безвиз?'
+2026-10-04 00:52:20 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:52:20 INFO pinecone_manager: Pinecone upsert finished: action=stored id=49d30f4c-a6b9-4720-b513-ed923f8c88bc
+2026-10-04 00:52:20 INFO assistant: Memory write result: user_id=5286641259 source=user_message action=stored id=49d30f4c-a6b9-4720-b513-ed923f8c88bc similarity=0.6408 threshold=0.8500
+2026-10-04 00:52:20 INFO assistant: Memory write requested: user_id=5286641259 source=bot_message text='Шри-Ланка имеет безвизовый режим с несколькими странами, включая:\n\n1. Индию\n2. Непал\n3. Мальдивы\n4. Сингапур\n5. Японию\n\n...'
+2026-10-04 00:52:20 INFO pinecone_manager: Pinecone memory check start: text='Шри-Ланка имеет безвизовый режим с несколькими странами, включая:\n\n1. Индию\n2. Непал\n3. Мальдивы\n4. Сингапур\n5. Японию\n\n...' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:52:21 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:52:21 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:52:21 INFO pinecone_manager: Pinecone threshold decision: similarity=0.6590 threshold=0.8500 compared=id='49d30f4c-a6b9-4720-b513-ed923f8c88bc' same_text=False decision=stored
+2026-10-04 00:52:21 INFO pinecone_manager: Pinecone write stored: id=0d7fc207-aede-4280-a46d-e30dd83d11b7 similarity=0.6590 threshold=0.8500 metadata_keys=['source', 'text', 'user_id'] text='Шри-Ланка имеет безвизовый режим с несколькими странами, включая:\n\n1. Индию\n2. Непал\n3. Мальдивы\n4. Сингапур\n5. Японию\n\n...'
+2026-10-04 00:52:21 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:52:21 INFO pinecone_manager: Pinecone upsert finished: action=stored id=0d7fc207-aede-4280-a46d-e30dd83d11b7
+2026-10-04 00:52:21 INFO assistant: Memory write result: user_id=5286641259 source=bot_message action=stored id=0d7fc207-aede-4280-a46d-e30dd83d11b7 similarity=0.6590 threshold=0.8500
+2026-10-04 00:52:21 INFO assistant: Fact extraction start: text='С какими странами у Шри-Ланки безвиз?'
+2026-10-04 00:52:22 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:52:22 INFO assistant: Fact extraction result: count=0 facts=[]
+2026-10-04 00:52:22 INFO assistant: No structured facts extracted for user_id=5286641259; turn messages already indexed
+2026-10-04 00:52:23 INFO telegram_bot: Reply to user_id=5286641259: Шри-Ланка имеет безвизовый режим с несколькими странами, включая:
+
+1. Индию
+2. Непал
+3. Мальдивы
+4. Сингапур
+5. Японию
+
+Список может меняться, поэтому лучше проверить актуальную информацию перед поезд...
+2026-10-04 00:56:04 INFO telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov: Подскажи каким образом можно добраться до столицы Словении?
+2026-10-04 00:56:04 INFO assistant: Memory recall: user_id=5286641259 top_k=8 query='Подскажи каким образом можно добраться до столицы Словении?'
+2026-10-04 00:56:05 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:56:05 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 00:56:06 INFO assistant: Memory recall result: user_id=5286641259 facts=8
+2026-10-04 00:56:09 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:56:09 INFO assistant: Memory write requested: user_id=5286641259 source=user_message text='Подскажи каким образом можно добраться до столицы Словении?'
+2026-10-04 00:56:09 INFO pinecone_manager: Pinecone memory check start: text='Подскажи каким образом можно добраться до столицы Словении?' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:56:10 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:56:10 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:56:10 INFO pinecone_manager: Pinecone threshold decision: similarity=0.2997 threshold=0.8500 compared=id='d1643a91-0448-4920-9b79-f240224c31bc' same_text=False decision=stored
+2026-10-04 00:56:10 INFO pinecone_manager: Pinecone write stored: id=f7005a48-19db-4ae5-9415-90794f47fdd5 similarity=0.2997 threshold=0.8500 metadata_keys=['source', 'text', 'user_id'] text='Подскажи каким образом можно добраться до столицы Словении?'
+2026-10-04 00:56:10 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:56:11 INFO pinecone_manager: Pinecone upsert finished: action=stored id=f7005a48-19db-4ae5-9415-90794f47fdd5
+2026-10-04 00:56:11 INFO assistant: Memory write result: user_id=5286641259 source=user_message action=stored id=f7005a48-19db-4ae5-9415-90794f47fdd5 similarity=0.2997 threshold=0.8500
+2026-10-04 00:56:11 INFO assistant: Memory write requested: user_id=5286641259 source=bot_message text='Чтобы добраться до столицы Словении, Любляны, можно использовать:\n\n1. **Самолет**: Прямые рейсы в аэропорт Любляны из кр...'
+2026-10-04 00:56:11 INFO pinecone_manager: Pinecone memory check start: text='Чтобы добраться до столицы Словении, Любляны, можно использовать:\n\n1. **Самолет**: Прямые рейсы в аэропорт Любляны из кр...' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:56:11 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:56:11 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:56:12 INFO pinecone_manager: Pinecone threshold decision: similarity=0.6843 threshold=0.8500 compared=id='f7005a48-19db-4ae5-9415-90794f47fdd5' same_text=False decision=stored
+2026-10-04 00:56:12 INFO pinecone_manager: Pinecone write stored: id=ee7ac812-8747-4fd2-a03e-71da9032eece similarity=0.6843 threshold=0.8500 metadata_keys=['source', 'text', 'user_id'] text='Чтобы добраться до столицы Словении, Любляны, можно использовать:\n\n1. **Самолет**: Прямые рейсы в аэропорт Любляны из кр...'
+2026-10-04 00:56:12 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:56:12 INFO pinecone_manager: Pinecone upsert finished: action=stored id=ee7ac812-8747-4fd2-a03e-71da9032eece
+2026-10-04 00:56:12 INFO assistant: Memory write result: user_id=5286641259 source=bot_message action=stored id=ee7ac812-8747-4fd2-a03e-71da9032eece similarity=0.6843 threshold=0.8500
+2026-10-04 00:56:12 INFO assistant: Fact extraction start: text='Подскажи каким образом можно добраться до столицы Словении?'
+2026-10-04 00:56:13 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:56:13 INFO assistant: Fact extraction result: count=0 facts=[]
+2026-10-04 00:56:13 INFO assistant: No structured facts extracted for user_id=5286641259; turn messages already indexed
+2026-10-04 00:56:13 INFO telegram_bot: Reply to user_id=5286641259: Чтобы добраться до столицы Словении, Любляны, можно использовать:
+
+1. **Самолет**: Прямые рейсы в аэропорт Любляны из крупных городов Европы.
+2. **Поезд**: Железнодорожное сообщение с соседними страна...
+2026-10-04 00:56:33 INFO telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov: Подскажи каким образом можно добраться до столицы Словакии?
+2026-10-04 00:56:52 ERROR TeleBot: Infinity polling exception: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+2026-10-04 00:57:17 INFO telegram_bot: Incoming text from user_id=5286641259 username=mnmashkov: Подскажи каким образом можно добраться до столицы Словакии?
+2026-10-04 00:57:18 INFO assistant: Memory recall: user_id=5286641259 top_k=8 query='Подскажи каким образом можно добраться до столицы Словакии?'
+2026-10-04 00:57:19 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:57:19 INFO pinecone.index: Querying index with top_k=8
+2026-10-04 00:57:21 INFO assistant: Memory recall result: user_id=5286641259 facts=8
+2026-10-04 00:57:23 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:57:23 INFO assistant: Memory write requested: user_id=5286641259 source=user_message text='Подскажи каким образом можно добраться до столицы Словакии?'
+2026-10-04 00:57:23 INFO pinecone_manager: Pinecone memory check start: text='Подскажи каким образом можно добраться до столицы Словакии?' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:57:24 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:57:24 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:57:24 INFO pinecone_manager: Pinecone threshold decision: similarity=0.8457 threshold=0.8500 compared=id='f7005a48-19db-4ae5-9415-90794f47fdd5' same_text=False decision=stored
+2026-10-04 00:57:24 INFO pinecone_manager: Pinecone write stored: id=382b5f24-a9f0-4ae1-99da-78fcd145b1cc similarity=0.8457 threshold=0.8500 metadata_keys=['source', 'text', 'user_id'] text='Подскажи каким образом можно добраться до столицы Словакии?'
+2026-10-04 00:57:24 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:57:25 INFO pinecone_manager: Pinecone upsert finished: action=stored id=382b5f24-a9f0-4ae1-99da-78fcd145b1cc
+2026-10-04 00:57:25 INFO assistant: Memory write result: user_id=5286641259 source=user_message action=stored id=382b5f24-a9f0-4ae1-99da-78fcd145b1cc similarity=0.8457 threshold=0.8500
+2026-10-04 00:57:25 INFO assistant: Memory write requested: user_id=5286641259 source=bot_message text='Чтобы добраться до столицы Словакии, Братиславы, можно использовать:\n\n1. **Самолет**: Прямые рейсы в аэропорт Братиславы...'
+2026-10-04 00:57:25 INFO pinecone_manager: Pinecone memory check start: text='Чтобы добраться до столицы Словакии, Братиславы, можно использовать:\n\n1. **Самолет**: Прямые рейсы в аэропорт Братиславы...' threshold=0.8500 namespace='' filter={'user_id': {'$eq': '5286641259'}}
+2026-10-04 00:57:25 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 00:57:25 INFO pinecone.index: Querying index with top_k=5
+2026-10-04 00:57:26 INFO pinecone_manager: Pinecone threshold decision: similarity=0.7760 threshold=0.8500 compared=id='ee7ac812-8747-4fd2-a03e-71da9032eece' same_text=False decision=stored
+2026-10-04 00:57:26 INFO pinecone_manager: Pinecone write stored: id=3a2a0d8e-eb2f-45ac-9c0b-241a85d5eff6 similarity=0.7760 threshold=0.8500 metadata_keys=['source', 'text', 'user_id'] text='Чтобы добраться до столицы Словакии, Братиславы, можно использовать:\n\n1. **Самолет**: Прямые рейсы в аэропорт Братиславы...'
+2026-10-04 00:57:26 INFO pinecone.index: Upserting 1 vectors into namespace ''
+2026-10-04 00:57:26 INFO pinecone_manager: Pinecone upsert finished: action=stored id=3a2a0d8e-eb2f-45ac-9c0b-241a85d5eff6
+2026-10-04 00:57:26 INFO assistant: Memory write result: user_id=5286641259 source=bot_message action=stored id=3a2a0d8e-eb2f-45ac-9c0b-241a85d5eff6 similarity=0.7760 threshold=0.8500
+2026-10-04 00:57:26 INFO assistant: Fact extraction start: text='Подскажи каким образом можно добраться до столицы Словакии?'
+2026-10-04 00:57:27 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-04 00:57:27 INFO assistant: Fact extraction result: count=0 facts=[]
+2026-10-04 00:57:27 INFO assistant: No structured facts extracted for user_id=5286641259; turn messages already indexed
+2026-10-04 00:57:27 INFO telegram_bot: Reply to user_id=5286641259: Чтобы добраться до столицы Словакии, Братиславы, можно использовать:
+
+1. **Самолет**: Прямые рейсы в аэропорт Братиславы из крупных городов Европы.
+2. **Поезд**: Железнодорожное сообщение с соседними ...
+2026-10-04 01:01:15 INFO telegram_bot: Incoming command from user_id=5286641259 username=mnmashkov: /memory
+2026-10-04 01:01:16 INFO assistant: Memory recall: user_id=5286641259 top_k=20 query='профиль пользователя факты предпочтения имя город работа цели'
+2026-10-04 01:01:17 INFO httpx2: HTTP Request: POST https://api.proxyapi.ru/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-04 01:01:17 INFO pinecone.index: Querying index with top_k=20
+2026-10-04 01:01:18 INFO assistant: Memory recall result: user_id=5286641259 facts=20
+2026-10-04 01:01:18 INFO telegram_bot: Recalled 20 facts for user_id=5286641259
+2026-10-04 01:01:18 INFO telegram_bot: Reply to user_id=5286641259: Вот что я о вас помню:
+
+• Имя пользователя в Telegram: Михаил Машков
+• Telegram username: @mnmashkov
+• Извини, я не могу показать предыдущие сообщения. Но могу помочь с любым вопросом или напомнить о ...
